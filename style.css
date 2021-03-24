@@ -5,6 +5,18 @@
     box-sizing: border-box;
 }
 
+/* */
+*{
+    color: white;
+}
+
+/* clearfix */
+clerfix::after{
+    display: table;
+    content: "";
+clear: both;
+}
+
 nav {
     background-color: rgb(65, 63, 63);
     height: 60px;
@@ -18,11 +30,13 @@ nav {
 
 .top-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     background-color: black;
     color: white;
     height: 60px;
     align-items: center;
+    float: right;
+    width: calc( 100% - 175px);
 }
 
 /* nav div {
@@ -44,6 +58,27 @@ nav {
     width: 200px;
 }
 
+.album {
+    background-color: cornsilk;
+    width: calc(100% - 175px);
+    float: right;
+}
 
+/* playlist manager */
+aside {
+        background-color: black;
+        width: 175px;
+        position: fixed; /* fissato a sinistra*/
+        left: 0;
+        bottom: 60px;   /* altezza di nav e sezione top */
+        top: 0px;
+        /* deve rimanere sotto la nav*/
+        z-index: -1; 
+}
+
+/* .content {
+    display: flex;
+    align-items: stretch;
+} */
 
 
