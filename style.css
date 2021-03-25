@@ -35,8 +35,8 @@ nav {
     color: white;
     height: 60px;
     align-items: center;
-    float: right;
     width: calc( 100% - 175px);
+    position: fixed;
 }
 
 /* nav div {
@@ -105,4 +105,14 @@ aside {
         border: 1px solid white;
         border-radius: 25px;
         padding: 15px;
+}
+
+.song img {
+    height: 40px;
+}
+
+.song {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
