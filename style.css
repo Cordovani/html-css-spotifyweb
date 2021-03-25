@@ -37,6 +37,7 @@ nav {
     align-items: center;
     width: calc( 100% - 175px);
     position: fixed;
+    right: 0;
 }
 
 /* nav div {
@@ -45,7 +46,8 @@ nav {
 
 .song {
     background-color: blue;
-    width: 200px;
+    /* per allineare con la barra laterale sinistra */
+    width: 175px; 
 }
 
 .player {
@@ -56,6 +58,9 @@ nav {
 .tools {
     background-color: coral;
     width: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .album {
@@ -80,6 +85,13 @@ aside {
     display: flex;
     align-items: stretch;
 } */
+
+/* text class */
+
+.gray {
+    color: gray;
+    font-size: 9px;
+}
 
 .img-placeholder {
     width: 150px;
@@ -107,6 +119,18 @@ aside {
         padding: 15px;
 }
 
+.controls {
+    display: flex;
+    justify-content: center;  
+    height: 50%;  
+}
+
+.progress-song {
+    display: flex;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
 .song img {
     height: 40px;
 }
@@ -116,3 +140,22 @@ aside {
     justify-content: space-around;
     align-items: center;
 }
+
+.progress-bar {
+    width: 20px;
+    background-color: white;
+    border-radius: 5px;
+    height: 5px;
+}
+
+.progress-background {
+    width: 100px;
+    background-color: lightgray;
+    border-radius: 5px;
+    height: 5px;
+}
+
+.song-name p {
+    font-size: 9px;
+}
+
