@@ -81,4 +81,28 @@ aside {
     align-items: stretch;
 } */
 
+.img-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    margin: 3px;
+}
 
+.row {
+    display: flex;
+}
+
+.tabs ul li {
+    display: inline-block;
+}
+
+.tabs ul {
+    list-style: none;
+    text-align: center;
+}
+
+.upgrade-button {
+        border: 1px solid white;
+        border-radius: 25px;
+        padding: 15px;
+}
