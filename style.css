@@ -46,18 +46,15 @@ nav {
 } */
 
 .song {
-    background-color: blue;
     /* per allineare con la barra laterale sinistra */
     width: 175px; 
 }
 
 .player {
-    background-color: cadetblue;
     width: 400px;
 }
 
 .tools {
-    background-color: coral;
     width: 200px;
     display: flex;
     justify-content: space-around;
@@ -81,6 +78,8 @@ aside {
         /* deve rimanere sotto la nav*/
         z-index: -1; 
         /* padding-left: 10px; */
+        display: flex;
+        flex-direction: column;
     }
     
 aside img {
@@ -92,6 +91,7 @@ aside img {
 aside ul {
     padding-bottom: 5px;
     padding-top: 5px;
+    overflow: auto;
     /* padding-left: 5px; */
 }
     
@@ -215,12 +215,14 @@ ul img {
 }
 
 .playlist {
-    background-color: rgb(55, 216, 55);
+    /* background-color: rgb(55, 216, 55); */
     color: black;
 }
 
 /* media query */
 @media screen and (max-width >= 576px) {
-    
+    /* togliere la navbar */
+
+    /* sostituire con icone e dimensione */
 }
 
