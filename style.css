@@ -8,6 +8,7 @@
 /* */
 *{
     color: white;
+    font-family: "montserrat","arial";
 }
 
 /* clearfix */
@@ -79,10 +80,42 @@ aside {
         top: 0px;
         /* deve rimanere sotto la nav*/
         z-index: -1; 
+        /* padding-left: 10px; */
+    }
+    
+aside img {
+    width: 140px;
+    padding: 5px;  
+    vertical-align: bottom;
+}
+    
+aside ul {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    /* padding-left: 5px; */
+}
+    
+aside li {
+    /* background-color: greenyellow; */
+    /* color: black; */
+    margin-bottom: 5px;
+    list-style: none;
 }
 
+aside a {
+    text-decoration: none;
+}
+
+#home {
+	border-left: 2px solid yellow;
+}
+
+.fa-plus {
+        background-color: lightgray;
+}
+    
 /* .content {
-    display: flex;
+        display: flex;
     align-items: stretch;
 } */
 
@@ -119,16 +152,21 @@ aside {
         padding: 15px;
 }
 
+  
 .controls {
     display: flex;
-    justify-content: center;  
-    height: 50%;  
+    justify-content: space-evenly;
+    height: 50%;
+    margin: 5px 75px;
+    align-items: center;
 }
+
 
 .progress-song {
     display: flex;
     justify-content: space-evenly;
     height: 50%;
+    font-size: 9px;
 }
 
 .song img {
@@ -157,5 +195,32 @@ aside {
 
 .song-name p {
     font-size: 9px;
+}
+
+.progress-song .progress-background {
+    width: 300px;
+}
+
+.controls i {
+    padding: 5px;
+}
+
+#play-button {
+	font-size: 30px;
+}
+
+
+ul img {
+    width: 30px;
+}
+
+.playlist {
+    background-color: rgb(55, 216, 55);
+    color: black;
+}
+
+/* media query */
+@media screen and (max-width >= 576px) {
+    
 }
 

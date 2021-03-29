@@ -2,7 +2,9 @@
 <html lang="en">
 
 <head>
-    <script src="https://use.fontawesome.com/884b72919e.js"></script>
+    <!-- <script src="https://use.fontawesome.com/884b72919e.js"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,7 +25,7 @@
                 <img src="img/sinister.jpeg" alt="sinister-cover">
                 <div class="song-name">
                     <h6>Sinister</h6>
-                    <p>Brano Nome</p>
+                    <a href="">Brano Name</a>
                 </div>
                 <i class="fa fa-heart"></i>
                 <i class="fa fa-folder"></i>
@@ -32,10 +34,11 @@
                 <div class="controls">
                     <i class="fa fa-random"></i>
                     <i class="fa fa-step-backward"></i>
-                    <i class="fa fa-play-circle"></i>
+                    <i id="play-button" class="fa fa-play-circle"></i>
                     <i class="fa fa-step-forward"></i>
-                    <!-- <i class="fa fa-redo"></i> -->
-                    <i class="fas fa-redo-alt"></i>
+                    <i class="fa fa-redo"></i>
+                    <!-- <i class="fas fa-redo-alt"></i> -->
+                    <!-- <i class="fa fa-sync-alt"></i> -->
                 </div>
                 <div class="progress-song">
                     <div>0:25</div>
@@ -62,21 +65,37 @@
         <section class="content clearfix">
             <!-- playlist manager -->
             <aside>
-                <div>Spotify</div>
+                <img src="img/logo.svg" alt="logo spotify">
                 <div>
                     <ul>
-                        <li>Home</li>
-                        <li>Cerca</li>
-                        <li>la tua libreria</li>
+                        <li>
+                            <img id="home" src="img/home.svg" alt="home"><a href="">Home</a>
+                        </li>
+                        <li>
+                            <img src="img/search.svg" alt="search"> 
+                            <a href="">Cerca</a>
+                        </li>
+                        <li>
+                            <img src="img/libreria.svg" alt="libreria">
+                            <a href="">La mia libreria</a>    
+                        </li>
                     </ul>
                 </div>
-                <div>
-                    Playlist / crea playlist
-                </div>
                 <div class="playlist">
-                    nome playlist
+                    <h2>Playlist</h2> 
+                    <i class="fa fa-plus"></i> crea playlist
                 </div>
-
+                <div class="playlist-list">
+                    <ul>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                        <li>nome playlist</li>
+                    </ul>
+                </div>
             </aside>
             <!-- main section -->
             <section class="album">
